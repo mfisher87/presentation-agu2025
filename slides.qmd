@@ -1,0 +1,933 @@
+---
+title: "🌐 GeoJupyter 🪐"
+subtitle: |
+  _Exploring more approachable geospatial data workflows as a community_
+authors:
+  - name: "Matt Fisher"
+    orcid: "0000-0003-3260-5445"
+    affiliation:
+      - name: "Schmidt DSE, UC Berkeley"
+title-slide-attributes:
+  data-notes: |
+    Hello!
+format:
+  revealjs:
+    from: "markdown+emoji"
+    theme: "white"
+    css: "assets/css/slides.css"
+    footer: "[Home](/) | [Source](https://github.com/mfisher87/presentation-agu2025) | [geojupyter.org](https://geojupyter.org)"
+    auto-stretch: true
+    slide-number: true
+---
+
+```{python}
+from IPython.display import Markdown
+
+def why_geojupyter(active: int | None = None) -> str:
+  """Display the repeated "Why GeoJupyter" slide content."""
+  items = [
+    "Even experts often struggle",
+    "Rich storytelling is only for the privileged",
+    "Friction when visualizing from a programming environment",
+  ]
+  lst = []
+  for index, item in enumerate(items):
+    if active is None:
+      lst.append(f"* {item}")
+    elif index == active:
+      lst.append(f"* **{item}**")
+    elif index < active:
+      lst.append(f"* [~~{item}~~]{{.fade}}")
+    elif index > active:
+      lst.append(f"* [{item}]{{.fade}}")
+
+  return Markdown(f"""
+:face_with_head_bandage: Existing workflows are sometimes painfully imperfect.
+
+{"\n".join(lst)}
+""")
+```
+
+---
+
+:::{.center-content}
+![](/assets/images/just-use-blank.jpg){.r-stretch width="1000px"}
+:::
+
+:::notes
+Let's talk about how hard it can be for geospatial data practitioners, whether
+that's researchers, data scientists, analysts, artists, or
+engineers, to adapt to working with their data in an programming paradigm using
+open source libraries instead of proprietary software.
+
+There are a lot of people in this picture: proprietary software has a strong
+hold over government, education, and industry.
+
+Moving towards a programming paradigm is becoming a more and more necessary
+part of the job.
+But it's still very hard.
+:::
+
+
+---
+
+:::{.center-content}
+![[xkcd.com/2577/](https://xkcd.com/2577/)](/assets/images/xkcd2577.png){.r-stretch width="1200px"}
+:::
+
+:::notes
+To quickly help you get to know what geospatial professionals are like...
+
+This is the kind of thing that we think is funny.
+:::
+
+
+---
+
+:::{.center-content}
+![](/assets/images/gis-professional-costume.webp){.r-stretch}
+:::
+
+:::notes
+In the belated spirit of Halloween, here's the official geospatial professional costume.
+
+<!-- alex ignore crashes -->
+Note that tears for use in case of software crashes are not included, you must provide your own.
+:::
+
+
+---
+
+:::{.center-content}
+![Error 99999: Something unexpected caused the tool to fail](/assets/images/error99999-keep-your-secrets.webp){.r-stretch width="1100px"}
+:::
+
+:::notes
+And these are the kinds of problems geospatial data professionals using proprietary software enjoy.
+
+It's really hard to read, but it says "Error 99999: Something unexpected caused the tool to fail. Contact technical support".
+
+(Please forgive me, Esri friends)
+:::
+
+
+---
+
+:::{.center-content}
+![](/assets/images/37-geospatial-python-packages-you-definitely-need.png){.r-stretch width="1200px"}
+:::
+
+:::notes
+So all the open source folks here are probably thinking "we can do better".
+And we can, and we have, with amazing projects like QGIS and Pangeo.
+
+But also... this is the first web result I get when I search for "Python geospatial
+visualization tools" on Google.
+
+Imagine being told you _definitely_ need to learn 37 new tools to adapt to a
+new way to do your job.
+
+And as a software engineer, I see myself in this image, and I want to be better for my friends.
+:::
+
+
+## :wave: Hi, I'm Matt!
+
+:::evenly-spaced
+:computer: Research Software Engineer (RSE)
+
+:people_holding_hands: Community Engagement Manager
+
+:open_hands: Open source maintainer:
+[jupytergis](https://github.com/geojupyter/jupytergis),
+[earthaccess](https://github.com/nsidc/earthaccess),
+several [conda-forge](https://conda-forge.org/) feedstocks,
+more
+
+:seedling: Working at [Schmidt DSE @ UC Berkeley](https://dse.berkeley.edu)
+
+:snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
+
+:dog: :seedling: :notes: :musical_keyboard: :drum:
+:::
+
+:::notes
+I'm Matt Fisher, and I'm a Research Software Engineer and Community Engagement
+Manager.
+
+I'm also a maintainer of several open source projects, and maybe we've interacted
+on GitHub before!
+I'll talk more about _JupyterGIS_ soon, but I also want to mention
+_earthaccess_, one of my favorite community-owned projects I help maintain.
+NASA data is behind a complicated API and authentication system, and
+_earthaccess_ navigates those systems for you and helps you access the data in
+3 lines of code.
+
+I'm currently leading the GeoJupyter project at Schmidt Center for Data Science
+and Environment at UC Berkeley.
+
+Before that, I worked in building software for research support and data
+analysis, visualization, management, and access at the National Snow and Ice Data
+Center.
+
+I also love dogs, gardening, and playing music on drums and keyboards :grin:
+:::
+
+
+## :mega: In this talk...
+
+:::::::::columns
+::::::{.column width=75%}
+* What is GeoJupyter?
+<br />
+<br />
+* Why is GeoJupyter?
+<br />
+<br />
+* What is JupyterGIS? :sparkles: Demo! :sparkles:
+<br />
+<br />
+* How you can join the GeoJupyter community
+::::::
+
+::::::{.column width=25%}
+:::{style="font-size: 90%"}
+![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
+:::
+::::::
+:::::::::
+
+:::notes
+
+In this talk, there will be plenty of links, so scan the QR code now if you
+want!
+
+I'm going to introduce the GeoJupyter community and discuss why it exists.
+I'll then introduce and demo the JupyterGIS software.
+Finally, we'll talk about how you can join the community.
+
+_Check if anyone is scanning the QR code, and wait for them._
+:::
+
+
+# :question: What is GeoJupyter?
+
+
+## :people_holding_hands: It's a communtity!
+
+![GeoJupyter is **not** software; it's a **community** which will build many things together!](/assets/images/venn-diagram.svg)
+
+:::notes
+First and foremost, **GeoJupyter** is a community and a team effort with many players.
+
+**JupyterGIS** is our flagship project, led by QuantStack;
+JupyterGIS is a GIS platform in JupyterLab that can be used in similar ways to
+QGIS, the leading open source GIS software, plus some cool new stuff.
+
+We'll talk more about JupyterGIS shortly.
+
+But our work is not limited to JupyterGIS.
+Not everything we build is going to be a huge project or GIS-first.
+It depends on what our community (that's you!) tells us they need.
+:::
+
+---
+
+![A photo of participants of a recent GeoJupyter Hackathon](/assets/images/hackathon-group-photo.jpg)
+
+:::notes
+This is a slice of our community who participated in a Hackathon and design
+dialog event a couple months ago.
+:::
+
+
+## :question: What is GeoJupyter?
+
+<br />
+<br />
+
+🤝 An effort to **democratize geospatial data practice** 🤝
+
+:::notes
+My first take on how to phrase this was "an effort to democratize geospatial data practice".
+:::
+
+
+## :question: What is GeoJupyter?
+
+<br />
+<br />
+
+:::{.fade}
+<s>🤝 An effort to **democratize geospatial data practice** 🤝</s>
+:::
+
+:::notes
+But that's not right at all.
+:::
+
+. . .
+
+<center>
+![](/assets/images/logo-qgis.svg){height="100px" style="padding-right: 40px"}
+![](/assets/images/logo-grass.svg){height="100px"}
+![](/assets/images/logo-pangeo.svg){height="100px"}
+![](/assets/images/logo-osgeo.svg){height="100px"}
+</center>
+
+:::notes
+We're joining an ongoing effort to democratize geospatial data practice, and
+bringing the unique strengths of Jupyter to this problem space.
+
+People have been succeeding for decades at advancing the democratization of
+geospatial data practice with projects and communities like QGIS, GRASS GIS,
+Pangeo, and OSGeo.
+:::
+
+
+# :brain: Jupyter is more than Notebooks
+
+:::notes
+To explain what we hope to contribute to this space that already has some
+pretty great things going for it, let's pause and remember something important:
+
+_Jupyter is more than Notebooks._
+
+Jupyter is a modular and extensible architecture for interactive computing with
+powerful, reusable building blocks.
+
+For example, the `jupyter-collaboration` extension enables users to collaborate
+on Notebooks in real time like Google Docs.
+:::
+
+
+---
+
+![[JupyterCAD](https://github.com/jupytercad/JupyterCAD) by QuantStack](/assets/images/jupytercad.gif)
+
+:::notes
+The same `jupyter-collaboration` extension provides the foundation for a
+collaborative computer aided design experience in JupyterCAD by QuantStack.
+
+Here we can see 3 users collaborating on a part in 3 separate interfaces:
+One in a Notebook widget, one in standard JupyterLab, and one in a custom
+application user interface built specifically for JupyterCAD.
+
+All 3 interfaces are made from the same building blocks.
+:::
+
+
+
+## :question: What is GeoJupyter?
+
+:::elevator-pitch
+<hr />
+
+GeoJupyter is an open and community-owned effort to [reimagine geospatial
+interactive computing experiences _within the Jupyter architecture_]{.jupyter-orange}
+to enable more people to confidently engage with geospatial data.
+
+<hr />
+:::
+
+:::notes
+Back to "what is GeoJupyter":
+
+Our mission statement describes us as an open and community-owned...
+
+_Read the slide_
+
+Maybe the first thing that jumps out is how broad this mission is, and
+that's intentional.
+We don't have all the solutions to this problem, but we know we can find them
+by working with you.
+
+What does it look like to **you** to **enable more people to confidently engage
+with geospatial data**?
+
+How can the Jupyter architecture help?
+:::
+
+
+## Our values
+
+:::evenly-spaced
+:artist: **Human-centered**, participatory design
+
+:open_hands: **Open source** and **open science**
+
+:cartwheeling: **Approachability** and **playfulness**, like desktop GIS tools
+
+:feather: **Flexibility** and **reproducibility**, like coding methods
+
+:performing_arts: **Collaboration** and **storytelling**, like Jupyter Notebooks
+:::
+
+:::notes
+These are the values that we feel will help us succeed at our mission:
+
+We build and design in close partnership with users.
+
+We believe in open source and open science, so everything we do is free and
+open.
+Open source is the best.
+
+And it's important to us to create tools that unify the strengths of current
+tools and workflows.
+
+Desktop GIS tools offer **approachability** and **playfulness**.
+
+Coding methods offer **flexibility** and **reproducibility**.
+
+And the Jupyter ecosystem offers **collaboration** and **storytelling**.
+:::
+
+
+---
+
+![You got your desktop GIS experience in my coding environment!](/assets/images/chocolate-peanut-butter.jpg)
+
+:::notes
+These values have historically been prioritized in separate tools and
+techniques, but we believe they belong together!
+
+But it's not going to happen by accident :smile:
+It's going to happen because software engineers empathized and worked with
+geospatial data practitioners.
+:::
+
+
+## :shrug: Why GeoJupyter?
+
+```{python}
+why_geojupyter()
+```
+
+:::notes
+We are building this community because working with data about our planet is hard.
+
+What we're bringing to the table is a holistic, human-centered, and
+participatory approach to evaluating and improving this landscape.
+
+So far we've conducted dozens of hours of user interviews to understand what folks need
+most, and we'll continue to use the input of real people to guide our priorities.
+
+Let's talk about a few examples of challenges we've heard from those
+practitioners.
+
+Many of these challenges have existing solutions, but they often involve either
+proprietary software or cobbling together multiple tools, introducing workflow
+friction.
+:::
+
+
+## :shrug: Why GeoJupyter?
+
+```{python}
+why_geojupyter(0)
+```
+
+:::notes
+First, geospatial is hard, **even for experts**.
+
+We **all** struggle sometimes.
+:::
+
+
+## Brianna's story
+
+[_When our community burned, where was the satellite information?_](https://www.linkedin.com/pulse/when-our-community-burned-where-satellite-information-pag%C3%A1n-phd-8rxwf/?trackingId=goJI9VniOZAI3RGuoPXysA%3D%3D)
+
+::::::columns
+:::{.column width=25%}
+![](/assets/images/brianna-pagan.jpg)
+:::
+
+:::{.column width=75%}
+> ...we are failing the people and causes that need us the most.
+:::
+::::::
+
+-- Brianna Pagán, Technical Program Lead @ Development Seed, ex-NASA Deputy DAAC Manager
+
+:::notes
+<!-- alex ignore fire -->
+I imagine there are many people here whose live have been affected by fire, or
+know someone who has.
+
+<!-- alex ignore her-him he-she fires -->
+Brianna, a former Deputy Manager at a NASA Data Center, lost her home in the
+recent fires in LA.
+When Brianna learned her home was at risk, her first thought, like a true
+scientist, was to look at the data.
+Recounting these events, she wrote:
+
+> I should be able to do this. I have a PhD in Remote Sensing, I have built satellite data
+> processing pipelines, I help manage one of the NASA satellite data centers, I teach
+> courses on climate resilience, adaptation and geoinformatics. […] and yet the irony is
+> that with all my experience I could not access the information I knew existed to help
+> our community.
+
+You can read Brianna's full story by following the link at the top of the slide.
+:::
+
+
+## :shrug: Why GeoJupyter?
+
+```{python}
+why_geojupyter(1)
+```
+
+:::notes
+Many geospatial professionals feel locked in to certain tools when they want to
+tell a rich story with spatial data.
+:::
+
+
+## Rich storytelling for everyone {background-video="/assets/images/scrollytelling.mp4" background-video-loop="true" .video-bg}
+
+[_A Spark on Burned Mountain_](https://projects.sfchronicle.com/2019/kincade-fire-origin/), SF Chronicle
+
+Matthias Gafni & Kazi Awal
+
+:::notes
+"Scrollytelling" is the cute name that I love for those beautiful and rich
+storytelling experiences you've likely seen from large media organizations like
+the New York Times.
+
+These are done by expert programmers and visualization specialists.
+For example, Mike Bostock, the creator of the D3 JavaScript data
+visualization library, was behind many of the New York Times scrollytelling
+experiences.
+
+There's also the option of subscribing to proprietary services with
+story-building tools.
+
+Why not open source?
+Imagine writing a MyST Markdown document that becomes a rich scrollytelling
+experience like this.
+:::
+
+
+## 📣 Andrew Bray & [Closeread](https://closeread.dev/)
+
+<!-- alex ignore whitespace -->
+:::{.center-content style="white-space: nowrap"}
+There is progress happening in this space!
+:::
+
+:::notes
+I want to give a shoutout to our Berkeley friend Andrew Bray who has been
+pushing this problem forward with "Closeread", a scrollytelling implementation
+for Quarto.
+
+We're excited to partner with Andrew to develop a MyST implementation with
+first-class support for geospatial scrollytelling.
+:::
+
+
+## :shrug: Why GeoJupyter?
+
+```{python}
+why_geojupyter(2)
+```
+
+:::notes
+Another challenge that we've heard widely reported by users is friction when
+visualizing data about our planet from a programming environment, like a
+Jupyter Notebook.
+
+We've found many practitioners are perfectly comfortable writing code for
+analysis, but visualizing data is an entirely different skill from analysis.
+There's a wide variety of visualization libraries with unique and sometimes
+frustrating interfaces.
+It can be hard to choose, and each choice has a tradeoff.
+Depending on the chosen library, practitioners may struggle to visualize many
+datasets together, or to interact with the visualization in a meaningful way,
+or to control the details of the visualization.
+
+To get around this, practitioners described a process with many steps, like a dance.
+We heard this so often that we gave it a name: "The GIS Bounce".
+:::
+
+
+## :woman_dancing: _The GIS Bounce_ :man_dancing: (hard mode) {.smaller}
+
+::::::columns
+:::{.column width=65%}
+:abacus: Do some analysis
+
+:floppy_disk: Write out a data file
+
+:inbox_tray: Download it to local machine
+
+:world_map: "Bounce" to QGIS, load basemap, load data file
+
+:eyes: Validate, inspect, explore
+
+:shower: "Bounce" back to Notebook and repeat
+:::
+
+:::{.column width=35%}
+![](/assets/images/gis-bounce-hard.jpg)
+:::
+::::::
+
+:::notes
+To do the GIS bounce:
+
+First, do some analysis.
+Then, write out a data file to check your work so far.
+If you're working in a cloud environment, download that data file.
+"Bounce" over to QGIS, load up a basemap, and then finally load your data.
+Now you can do your validation and "bounce" back to your notebook, and repeat!
+
+That's a lot of steps, and they are repeated every time many practitioners
+check their work -- a common and critical task.
+
+Checking our work shouldn't be frustrating and time-consuming, it should be
+seamless, joyful, and rewarding.
+:::
+
+
+<!-- alex ignore easy -->
+## :woman_dancing: _The GIS Bounce_ :man_dancing: (easy mode) {.smaller}
+
+::::::columns
+:::{.column width=65%}
+:abacus: Do some analysis
+
+:snake: "Bounce" to graphical GIS: 1 LOC!
+
+(Imports don't count :smirk:)
+
+```python
+from ... import explore
+
+explore(
+  my_xarray_dataarray,
+  {'data': my_geodataframe, 'symbology': 'choropleth'},
+)
+```
+
+:eyes: Validate, inspect, explore
+
+:shower: "Bounce" back to Notebook and repeat
+:::
+
+:::{.column width=35%}
+![](/assets/images/gis-bounce-easy.jpg)
+:::
+::::::
+
+:::notes
+What about a nice interface that can display your many geospatial data sources
+as layers in a Jupyter widget with some sensible symbology by default?
+
+In this example, we pass in some gridded data with no settings, and some
+polygon data with a request to display it as a chorolpleth map.
+
+We built something like this in JupyterGIS, and we're continuing to evolve the idea.
+:::
+
+
+## :shrug: Why GeoJupyter?
+
+```{python}
+why_geojupyter(3)
+```
+
+:::{style="font-size: 80%"}
+_And much, much more!!_
+
+* Friction reproducing GUI spatial processing
+* Analyzing and visualizing features of vertical landscapes
+* Linked visualizations are difficult to build
+:::
+
+:::notes
+The landscape of open source geospatial tools is far from perfect.
+:::
+
+. . .
+
+:::{style="font-size: 80%"}
+...IDK, you tell us! :ear:
+:::
+
+:::notes
+<!-- alex ignore just -->
+There's a lot that needs solving, and we are far from having all the answers!
+This is why we are building a community, not just software.
+:::
+
+
+# JupyterGIS {.nostretch}
+
+:bangbang: Early development :bangbang:
+
+![](/assets/images/logo-quantstack.png){width=50%}
+
+
+:::notes
+Let's talk about some of our work in progress now!
+
+JupyterGIS is the _GeoJupyter_ flagship project, with development led by the amazing folks at QuantStack, some of whom are here.
+And you should meet them!
+:::
+
+
+## What is it? How is it different?
+
+:::notes
+_Read the slide_
+:::
+
+:::incremental
+* Interactive GIS environment
+* JupyterLab- and browser-native (try it in a JupyterHub!)
+* Python API
+* Supports QGIS project files
+* **_Real-time collaboration_**: like Google Docs, but on a map!
+:::
+
+. . .
+
+:house: All under one familiar roof (JupyterLab)!
+
+
+---
+
+![A screenshot of JupyterGIS](/assets/images/jupytergis.png)
+
+
+## Demo
+
+:bulb: Lite: <https://jupytergis.readthedocs.io/en/latest/lite/lab/>
+
+:test_tube: Lab: <http://localhost:8888>
+
+:confounded: No wifi? `uv run --with jupytergis --with jupyterlab-geojson jupyter lab`
+
+:::notes
+_Open in private window:_
+<http://34.169.86.39:8888/>
+
+**Matt Solo:**
+
+* _Open `notebook.ipynb`_
+  * First let's look at the basic GeoJSON extension's ability to view geospatial data in JupyterLab.
+    There are lots of other ways to do this too.
+  * _Run one cell at a time_
+  * If we use JupyterGIS, we can programmatically start a new GIS project from
+    its Python API, add a basemap, and add some GeoJSON data from a file.
+  <!-- alex ignore just -->
+  * We can view the project we just created in Notebook widget or in a new panel.
+
+* Let's play with a premade GIS project.
+  * _Open `france_hiking.jgis` from the examples dir_
+  * This example JupyterGIS project file and many more are distributed with
+    JupyterGIS, and you can check it out in your browser with JupyterLite from
+    the "Try it now!" link in our README and docs.
+  * This map shows hiking trails in France.
+  * It's a bit noisy right now, so let's get rid of this MODIS layer.
+	* _Hide MODIS layer_
+
+* JupyterGIS comes with a layer browser that enables graphical selection from a collection of pre-curated layers
+	* Let's add a layer that shows where Strava users are running
+	* _Add a layer from the layer browser: `strava.run`_
+  * The hiking layer is a bit hard to read now, though, so let's change the layer order.
+	* _Move "Strava.Run" underneath "Waymarked"._
+		* Still a bit hard to read, let's change the opacity.
+	* _Set opacity of "Waymarked" to 1._
+		* That's better!
+
+* I was playing around with the San Diego public data portal and found a couple of interesting layers I want to explore.
+	* _Add Unexploded_
+  * You may notice that this interface looks similar to the JupyterLab file browser that normally shows up in the left panel, that’s because it is the same interface\! Remember Jupyter’s modular and reusable architecture!
+
+	* _Identify a feature_
+	* _Set up a “Scary” single symbol symbology_
+
+* Let's look at an earthquakes dataset now
+	* _Add eq.json_
+	* _Identify a feature_
+	* _Graduated symbology_
+	* _Time slider_
+
+* **Animate with “play button” (Fernando’s cue to go)**
+
+**Fernando joins:**
+
+* Fernando adds the “Points of interest” layer
+* Matt notices the addition
+* Zoom to layer
+* Follow Fernando
+* Fernando adds an annotation to the point of interest that looks good for lunch
+* Matt responds “looks like a great spot!”
+* Fernando Route layer to the map
+
+:warning: **If something goes wrong** :warning:
+
+* That's what I get for doing a live demo.
+* I've flown too close to the sun, sorry for my hubris :laughing:
+<!-- alex ignore just -->
+* _Open browser debug tools_. **Hold on, I can fix this!!** Just kidding, let's move on :smile:
+
+Come talk to me later and I'll tell you or show you more :smile:
+:::
+
+
+<!-- alex ignore just -->
+## Demo recording (just in case)
+
+{{< video /assets/video/jgis-demo.mp4 >}}
+
+
+# :brain: Jupyter is more than Notebooks
+
+:::notes
+<!-- alex ignore just -->
+You just saw some new ideas about how Jupyter's architecture can be applied to the geospatial domain.
+
+We want you to think about this -- where can the power of Jupyter's modular and
+reusable architecture enable new and innovating workflows in your domain of
+interest?
+:::
+
+
+---
+
+:::{.center-content}
+![](/assets/images/joining-the-geojupyter-community.jpg){.r-stretch width="1000px"}
+:::
+
+
+:::notes
+We want to work with you to make the ecosystem better, whether you're a
+practitioner, developer, educator, communicator, or artist.
+
+If you're wondering, "how can I be part of this awesome community", here are a few ways.
+:::
+
+
+## How you can join
+
+{{< include how-you-can-join.md >}}
+
+:::notes
+If you can only do one thing, join us on the Jupyter Zulip, which is like an
+open-source Slack.
+There's a GeoJupyter channel there!
+You don't even need to register an account to view activity, but we would love
+it if you joined in :smile:
+So many cool people are there, I promise you'll fit right in ;)
+
+In the short-term, we're going to be participating in the community sprints on
+Thursday and I'd love to see you there!
+
+There are lots of ways you can join our community and be a part of this mission.
+
+We'd love to talk to you about your needs, frustrations, and opinions in an interview.
+
+It would be amazing to see you at one of our bi-weekly hackathons or monthly community meetings!
+You can view our community calendar on `geojupyter.org` or by following the link on this slide.
+
+JupyterGIS is available for install with `pip`, `conda`, or equivalents.
+If you follow the link on this slide or visit the documentation, you can find a link to try JupyterGIS with JupyterLite.
+JupyterLite is a fully-browser-native version of JupyterGIS, meaning there's no server and nothing needs to be installed!
+We're jazzed to hear what you think :smile:
+
+<!-- alex ignore of-course special -->
+Of course, we'd love to work with you directly on GeoJupyter projects, with
+special interest in how you think Jupyter's modular and reusable architecture
+can be applied to make geospatial data workflows more accessible and enjoyable.
+
+We're excited to expand our **funded** development team, so if your company is
+interested in sponsoring this work, please reach out.
+
+If you have any questions, you can always reach out to me on Zulip, GitHub, or email.
+
+If you're going to the AGU conference in December, we'll be there too running a
+workshop and session titled "Open Geospatial Workflows in the Cloud", hope to
+see you there :)
+:::
+
+
+## :heart: Thank you
+
+{{< include logos.md >}}
+
+:::notes
+I want to thank everyone involved in this community effort.
+**So many** people and organizations are working together to make cool stuff happen!
+
+<!-- alex ignore special -->
+Special thanks to QuantStack for leading the development of JupyterGIS.
+
+And to Fernando Pérez and the Schmidt Center for Data Science & Environment for
+supporting me to work on this -- I'm having lots of fun :grin:
+:::
+
+---
+
+![[_You don't need to contribute more to open source, you need to go to therapy_](https://youtu.be/kUrfsKlyZOk?si=L7Z0x9azuMvccseD&t=1541)](/assets/images/role-model.jpg){width=50%}
+
+
+:::notes
+One last big thank you to the amazing role models and mentors in these
+communities who have inspired me to be a better community manager and
+developer.
+
+I want to give a quick plug for Yuvi Panda's lightning talk at SciPy this year:
+_You don't need to contribute more to open source, you need to go to therapy_.
+
+Click the link on this slide to watch!
+:::
+
+
+# :heart: Thank **you** for listening! :heart:
+
+![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
+
+:::notes
+Thanks for your time and attention! And I hope to see you around :smile:
+:::
+
+
+# :clown_face: Memes that were too mid
+
+---
+
+![](/assets/images/just-want-a-map.jpg)
+
+---
+
+![](/assets/images/why-cant-i-remember-all-these-geospatial-viz-apis.jpeg)
+
+---
+
+![](assets/images/gis-google-maps.jpeg)
+
+
+# :tada: Bonus slides
+
+---
+
+{{< include logos.md >}}
+
+
+## FAQ {.smaller .scrollable}
+
+* :neutral_face: What about _\<existing tool\>_?
+  <!-- alex ignore kids -->
+  * :fire: We understand we're the "new kids on the block" and we're coming in hot.
+  * We are interested in building on the amazing progress of recent decades and
+    learning lessons from modern users.
+  <!-- alex ignore bigger -->
+  * Understanding geographic space and scale is centuries in the making, bigger
+    than any company or project, including ours.
+* :stopwatch: Timeline?
+  * :sparkles: [JupyterGIS available to install right now](https://jupytergis.readthedocs.io/en/latest/user_guide/install.html)!
+  * :shrug: It depends! We're listening to users to identify priorities.
+  * STAC browser expected this year.
