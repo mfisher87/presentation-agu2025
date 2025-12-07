@@ -111,7 +111,7 @@ I also love dogs, gardening, and playing music on drums and keyboards :grin:
 * What is JupyterGIS? :sparkles: Demo! :sparkles:
 <br />
 <br />
-* How you can join the GeoJupyter community
+* You can join the GeoJupyter Community!
 ::::::
 
 ::::::{.column width=25%}
