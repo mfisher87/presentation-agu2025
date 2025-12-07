@@ -724,21 +724,6 @@ Thanks for your time and attention! And I hope to see you around :smile:
 :::
 
 
-# :clown_face: Memes that were too mid
-
----
-
-![](/assets/images/just-want-a-map.jpg)
-
----
-
-![](/assets/images/why-cant-i-remember-all-these-geospatial-viz-apis.jpeg)
-
----
-
-![](assets/images/gis-google-maps.jpeg)
-
-
 # :tada: Bonus slides
 
 ---
