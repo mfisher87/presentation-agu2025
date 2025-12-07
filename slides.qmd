@@ -99,6 +99,9 @@ I also love dogs, gardening, and playing music on drums and keyboards :grin:
 
 :::::::::columns
 ::::::{.column width=75%}
+* What is Jupyter?
+<br />
+<br />
 * What is GeoJupyter?
 <br />
 <br />
@@ -119,15 +122,77 @@ I also love dogs, gardening, and playing music on drums and keyboards :grin:
 :::::::::
 
 :::notes
-
-In this talk, there will be plenty of links, so scan the QR code now if you
-want!
+In this talk, there will be plenty of links, so scan the QR code now to access these slides and follow the links!
 
 I'm going to introduce the GeoJupyter community and discuss why it exists.
-I'll then introduce and demo the JupyterGIS software.
-Finally, we'll talk about how you can join the community.
+I'll then introduce the JupyterGIS software and show it in action.
+
+Finally, we'll talk about what you can get out of joining the GeoJupyter
+community and how you can participate.
 
 _Check if anyone is scanning the QR code, and wait for them._
+:::
+
+
+# :question: What is Jupyter?
+
+## Notebooks: Computational narrative
+
+:::evenly-spaced
+Interactive exploration
+
+Computational storytelling
+
+Sharing and publishing
+:::
+
+:::notes
+<!-- alex ignore just -->
+You just heard about this from Fernando in the previous talk, but let's do a quick re-hash.
+
+Jupyter _Notebooks_ enable:
+
+* Interactive exploration, enabling development and thinking through human-computer conversations
+* Computational storytelling, enabling rich and creative expression of ideas alongside computational analysis and results
+* And sharing and publishing, where tools like MyST and Voici and initiatives
+  like AGU's "Notebooks Now!" treat Notebooks as first class research
+  publication artifacts.
+:::
+
+
+## :brain: Jupyter is more than Notebooks
+
+![[The Turing Way Community & Scriberia (2020)](https://zenodo.org/records/3695300)](/assets/images/jupyter-scriberia.jpg){width=1001px}
+
+:::notes
+To explain what we hope to contribute the geospatial computation space (which
+already has some pretty great things going for it), let's pause and remember
+something important:
+
+_Jupyter is more than Notebooks._
+
+It's a community that makes lots of cool stuff together.
+:::
+
+
+## :brain: Jupyter is more than Notebooks
+
+:::evenly-spaced
+Tools for thinking
+
+Modular and extensible architecture for interactive computing
+
+Reusable building blocks
+:::
+
+:::notes
+Jupyter is about tools for thinking.
+It's also a modular and extensible architecture for interactive computing with
+powerful, reusable building blocks.
+
+For example, the `jupyter-collaboration` extension enables users to collaborate
+on Notebooks in real time like Google Docs.
+That's a bit of foreshadowing.
 :::
 
 
@@ -208,17 +273,9 @@ Pangeo, and OSGeo.
 
 # :brain: Jupyter is more than Notebooks
 
+_TODO: Speaker notes_
+
 :::notes
-To explain what we hope to contribute to this space that already has some
-pretty great things going for it, let's pause and remember something important:
-
-_Jupyter is more than Notebooks._
-
-Jupyter is a modular and extensible architecture for interactive computing with
-powerful, reusable building blocks.
-
-For example, the `jupyter-collaboration` extension enables users to collaborate
-on Notebooks in real time like Google Docs.
 :::
 
 
