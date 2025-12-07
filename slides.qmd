@@ -637,19 +637,7 @@ interest?
 :::
 
 
----
-
-:::{.center-content}
-![](/assets/images/joining-the-geojupyter-community.jpg){.r-stretch width="1000px"}
-:::
-
-
-:::notes
-We want to work with you to make the ecosystem better, whether you're a
-practitioner, developer, educator, communicator, or artist.
-
-If you're wondering, "how can I be part of this awesome community", here are a few ways.
-:::
+## TODO: Image encouraging/justifying joinage
 
 
 ## How you can join
