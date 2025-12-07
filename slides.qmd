@@ -715,6 +715,12 @@ Click the link on this slide to watch!
 :::
 
 
+## TODO: other GeoJupyter happenings at AGU
+
+
+## TODO: Office hours
+
+
 # :heart: Thank **you** for listening! :heart:
 
 ![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
