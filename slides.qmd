@@ -369,7 +369,7 @@ These values have historically been prioritized in separate tools and
 techniques, but we believe they belong together!
 
 But it's not going to happen by accident :smile:
-It's going to happen because software engineers empathized and worked with
+It's only going to happen if software engineers empathize and collaborate with
 geospatial data practitioners.
 :::
 
