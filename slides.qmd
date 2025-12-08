@@ -236,7 +236,7 @@ dialog event a couple months ago.
 🤝 An effort to **democratize geospatial data practice** 🤝
 
 :::notes
-My first take on how to phrase this was "an effort to democratize geospatial data practice".
+My first take on how to summarize GeoJupyter was "an effort to democratize geospatial data practice".
 :::
 
 
