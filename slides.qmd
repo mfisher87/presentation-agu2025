@@ -272,34 +272,6 @@ Pangeo, and OSGeo.
 :::
 
 
-# :brain: Jupyter is more than Notebooks
-
-_TODO: Speaker notes_
-
-_TODO: Consider removing this slide and the next one_
-
-:::notes
-:::
-
-
----
-
-![[JupyterCAD](https://github.com/jupytercad/JupyterCAD) by QuantStack](/assets/images/jupytercad.gif)
-
-:::notes
-The `jupyter-collaboration` extension I mentioned earlier provides the
-foundation for a collaborative computer aided design experience in JupyterCAD
-by QuantStack.
-
-Here we can see 3 users collaborating on a part in 3 separate interfaces:
-One in a Notebook widget, one in standard JupyterLab, and one in a custom
-application user interface built specifically for JupyterCAD.
-
-All 3 interfaces are made from the same building blocks.
-:::
-
-
-
 ## :question: What is GeoJupyter?
 
 :::elevator-pitch
@@ -313,8 +285,6 @@ to enable more people to confidently engage with geospatial data.
 :::
 
 :::notes
-Back to "what is GeoJupyter":
-
 Our mission statement describes us as an open and community-owned...
 
 _Read the slide_
