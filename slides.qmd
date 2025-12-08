@@ -48,7 +48,7 @@ def why_geojupyter(active: int | None = None) -> str:
 """)
 ```
 
-## TODO: Intro?
+## TODO: Introductory hook?
 
 ## :wave: Hi, I'm Matt!
 
