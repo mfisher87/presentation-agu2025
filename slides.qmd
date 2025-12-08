@@ -179,15 +179,14 @@ It's a community that makes lots of cool stuff together.
 ## :brain: Jupyter is more than Notebooks
 
 :::evenly-spaced
-Tools for thinking
-
 Modular and extensible architecture for interactive computing
 
 Reusable building blocks
+
+Tools for thinking
 :::
 
 :::notes
-Jupyter is about tools for thinking.
 It's also a modular and extensible architecture for interactive computing with
 powerful, reusable building blocks.
 
