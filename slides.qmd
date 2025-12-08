@@ -742,7 +742,7 @@ reusable architecture enable new and innovative geospatial workflows?
 ![[geojupyter.org](https://geojupyter.org)](/assets/images/join-us.gif)
 
 :::notes
-We'd love for you to join us!
+We'd love for you to join our community to share your ideas!
 
 In our community, you can find folks with similar problems to yours, ask and
 answer questions, and participate in designing the future of geospatial
