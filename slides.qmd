@@ -755,14 +755,14 @@ interactive computing!
 {{< include how-you-can-join.md >}}
 
 :::notes
+There are lots of ways you can join our community and be a part of this mission.
+
 If you can only do one thing, join us on the Jupyter Zulip, which is like an
 open-source Slack.
 There's a GeoJupyter channel there!
 You don't even need to register an account to view activity, but we would love
 it if you joined in :smile:
 So many cool people are there, I promise you'll fit right in ;)
-
-There are lots of ways you can join our community and be a part of this mission.
 
 We'd love to talk to you about your needs, frustrations, and opinions in an interview.
 
@@ -783,11 +783,12 @@ We're excited to expand our **funded** development team, so if your company is
 interested in sponsoring this work, please reach out.
 
 If you have any questions, you can always reach out to me on Zulip, GitHub, or email.
-
-If you're going to the AGU conference in December, we'll be there too running a
-workshop and session titled "Open Geospatial Workflows in the Cloud", hope to
-see you there :)
 :::
+
+## TODO: other GeoJupyter happenings at AGU
+
+
+## TODO: Office hours
 
 
 ## :heart: Thank you
@@ -822,10 +823,6 @@ Click the link on this slide to watch!
 :::
 
 
-## TODO: other GeoJupyter happenings at AGU
-
-
-## TODO: Office hours
 
 
 ## :heart: Thank **you** for listening! :heart:
