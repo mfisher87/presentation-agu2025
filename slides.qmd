@@ -658,7 +658,7 @@ Let's take a look at some of the things we can do with JupyterGIS.
 
 ## Explore data
 
-![Inspecting attributes of a building footprint ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-1-1536x922.png)
+![Inspecting attributes of a building footprint ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](/assets/images/jupytergis-identify.jpg)
 
 :::notes
 We can explore datasets interactively -- here we are inspecting attributes of a buildings dataset.
@@ -667,7 +667,7 @@ We can explore datasets interactively -- here we are inspecting attributes of a 
 
 ## Process data
 
-![Calculating convex hulls of regions of France ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-3-1536x922.png)
+![Calculating convex hulls of regions of France ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](/assets/images/jupytergis-processing.jpg)
 
 :::notes
 We can perform data processing operations in a visual environment -- here we've calculated convex hulls of regions of France.
