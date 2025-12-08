@@ -767,7 +767,17 @@ reusable architecture enable new and innovative geospatial workflows?
 :::
 
 
-## TODO: Image encouraging/justifying joinage
+---
+
+![](/assets/images/join-us.gif)
+
+:::notes
+We'd love for you to join us!
+
+In our community, you can find folks with similar problems to yours, ask and
+answer questions, and participate in designing the future of geospatial
+interactive computing!
+:::
 
 
 ## How you can join
