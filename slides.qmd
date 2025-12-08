@@ -165,9 +165,9 @@ Jupyter _Notebooks_ enable:
 ![[The Turing Way Community & Scriberia (2020)](https://zenodo.org/records/3695300)](/assets/images/jupyter-scriberia.jpg){width=1001px}
 
 :::notes
-To explain what we hope to contribute the geospatial computation space (which
-already has some pretty great things going for it), let's pause and remember
-something important:
+To explain what we hope to contribute to the geospatial computation space
+(which already has some pretty great things going for it), let's pause and
+remember something important:
 
 _Jupyter is more than Notebooks._
 
