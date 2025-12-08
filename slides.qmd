@@ -7,9 +7,6 @@ authors:
     orcid: "0000-0003-3260-5445"
     affiliation:
       - name: "Schmidt DSE, UC Berkeley"
-title-slide-attributes:
-  data-notes: |
-    Hello!
 format:
   revealjs:
     from: "markdown+emoji"
