@@ -666,6 +666,8 @@ Here we see JupyterGIS running 4 different instances, one of which is in a Noteb
 
 :::notes
 _Read the slide_
+
+Let's take a look at some of the things we can do with JupyterGIS.
 :::
 
 :::incremental
@@ -685,15 +687,27 @@ _Read the slide_
 
 ![Inspecting attributes of a building footprint ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-1-1536x922.png)
 
+:::notes
+We can explore datasets interactively -- here we are inspecting attributes of a buildings dataset.
+:::
+
 
 ## Process data
 
 ![Calculating convex hulls of regions of France ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-3-1536x922.png)
 
+:::notes
+We can perform data processing operations in a visual environment -- here we've calculated convex hulls of regions of France.
+:::
+
 
 ## Browse curated layers
 
 ![The JupyterGIS layer browser](/assets/images/jupytergis-layer-browser.jpg)
+
+:::notes
+We can add layers to our map from a curated layer browser.
+:::
 
 
 ## Discover data with STAC (WIP)
@@ -701,11 +715,8 @@ _Read the slide_
 ![Browsing a STAC catalog in JupyterGIS ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-5.png)
 
 :::notes
-Spatio Temporal Asset Catalogs, or "STAC catalogs" are a modern standard for
-computer interface with data catalogs.
-
-We have basic STAC catalog support, enabling you to browse, search, and filter
-data in a STAC catalog to find data that interests you.
+We can discover data using Spatio Temporal Asset Catalogs, or "STAC catalogs",
+a modern standard for computer interface with data catalogs.
 
 This is a work in progress that will continue to evolve over time!
 :::
@@ -719,8 +730,8 @@ This is a work in progress that will continue to evolve over time!
 Thanks to the modular Jupyter architecture, we can build extensions on
 extensions to compose cool new features.
 
-Here's a demonstration of using `jupytergis-tiler` by David Brochart of
-Quantstack, to display data in an Xarray dataset on-the-fly in JupyterGIS.
+Here we're using `jupytergis-tiler` by David Brochart of Quantstack, to display
+data in an Xarray dataset on-the-fly in JupyterGIS.
 
 Under the hood, the TiTiler dynamic tile server by Development Seed is powering
 this functionality.
@@ -732,8 +743,8 @@ this functionality.
 ![Two users collaborating in real-time on a JupyterGIS project ([QuantStack](https://www.youtube.com/watch?v=FzHYYCvWyu0))](/assets/images/jupytergis-collab.gif){width=100%}
 
 :::notes
-Thanks again to the modular Jupyter architecture, we can leverage the same
-extension, `jupyter-collaboration`, that enables real-time collaboration on
+Thanks again to the modular Jupyter architecture, we can leverage
+the `jupyter-collaboration` extension, which enables real-time collaboration on
 Notebooks, to enable real-time collaboration on a map.
 
 Users can leave Google Docs style comments, follow each other, and edit the map
@@ -749,8 +760,7 @@ and open source software.
 You just saw some new ideas about how Jupyter's architecture can be applied to the geospatial domain.
 
 We want you to think about this -- where can the power of Jupyter's modular and
-reusable architecture enable new and innovating workflows in your domain of
-interest?
+reusable architecture enable new and innovative geospatial workflows?
 :::
 
 
