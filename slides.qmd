@@ -769,7 +769,7 @@ reusable architecture enable new and innovative geospatial workflows?
 
 ---
 
-![](/assets/images/join-us.gif)
+![<https://geojupyter.org>](/assets/images/join-us.gif)
 
 :::notes
 We'd love for you to join us!
