@@ -10,6 +10,6 @@ preview = "quarto preview"
 render = "quarto render"
 
 [dependencies]
-quarto = ">=1.8.26,<2"
+quarto = "==1.7.33"  # 1.8.x has a frustrating infinite refresh bug on the preview server
 jupyter = ">=1.1.1,<2"
 python = ">=3.13.5,<3.14"
