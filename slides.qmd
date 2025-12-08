@@ -688,9 +688,15 @@ _Read the slide_
 
 ![Inspecting attributes of a building footprint ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-1-1536x922.png)
 
+
 ## Process data
 
 ![Calculating convex hulls of regions of France ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-3-1536x922.png)
+
+
+## Browse curated layers
+
+![The JupyterGIS layer browser](/assets/images/jupytergis-layer-browser.jpg)
 
 
 ## Discover data with STAC (WIP)
