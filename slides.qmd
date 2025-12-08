@@ -793,15 +793,14 @@ And to Fernando Pérez and the Schmidt Center for Data Science & Environment for
 supporting me to work on this -- I'm having lots of fun :grin:
 :::
 
----
+
+## :heart: Thank you
 
 ![[_You don't need to contribute more to open source, you need to go to therapy_](https://youtu.be/kUrfsKlyZOk?si=L7Z0x9azuMvccseD&t=1541)](/assets/images/role-model.jpg){width=50%}
 
-
 :::notes
-One last big thank you to the amazing role models and mentors in these
-communities who have inspired me to be a better community manager and
-developer.
+Huge thank you to the amazing role models and mentors in these communities who
+have inspired me.
 
 I want to give a quick plug for Yuvi Panda's lightning talk at SciPy this year:
 _You don't need to contribute more to open source, you need to go to therapy_.
@@ -810,9 +809,7 @@ Click the link on this slide to watch!
 :::
 
 
-
-
-## :heart: Thank **you** for listening! :heart:
+## :heart: Thank *you* for listening! :heart:
 
 ![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
 
