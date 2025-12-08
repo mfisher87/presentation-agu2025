@@ -64,6 +64,7 @@ more
 
 :snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
 
+:open_hands: :open_book: :brain:
 :dog: :seedling: :notes: :musical_keyboard: :drum:
 :::
 
@@ -73,7 +74,7 @@ Hello friends!
 I'm Matt Fisher, and I'm a Research Software Engineer and Community Engagement
 Manager.
 
-I'm also a maintainer of several open source projects, and maybe we've interacted
+I'm a maintainer of several open source projects, and maybe we've interacted
 on GitHub before!
 I'll talk more about _JupyterGIS_ soon, but I also want to mention
 _earthaccess_, one of my favorite community-owned projects I help maintain.
@@ -87,6 +88,9 @@ and Environment at UC Berkeley.
 Before that, I worked in building software for research support and data
 analysis, visualization, management, and access at the National Snow and Ice Data
 Center.
+
+I'm passionate about open science, documentation, and design to minimize
+cognitive load.
 
 I also love dogs, gardening, and playing music on drums and keyboards :grin:
 :::
