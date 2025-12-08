@@ -80,7 +80,7 @@ I'll talk more about _JupyterGIS_ soon, but I also want to mention
 _earthaccess_, one of my favorite community-owned projects I help maintain.
 NASA data is behind a complicated API and authentication system, and
 _earthaccess_ navigates those systems for you and helps you access the data in
-3 lines of code.
+3 lines of Python.
 
 I'm currently leading the GeoJupyter project at Schmidt Center for Data Science
 and Environment at UC Berkeley.
