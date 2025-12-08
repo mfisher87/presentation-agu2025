@@ -633,7 +633,7 @@ Here we see JupyterGIS running 4 different instances, one of which is in a Noteb
 :::
 
 
-## What is it? How is it different?
+## What is JupyterGIS? How is it different?
 
 :::notes
 _Read the slide_
