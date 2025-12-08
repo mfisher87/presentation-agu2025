@@ -783,7 +783,18 @@ interested in sponsoring this work, please reach out.
 If you have any questions, you can always reach out to me on Zulip, GitHub, or email.
 :::
 
-## TODO: other GeoJupyter happenings at AGU
+## Other GeoJupyter happenings at AGU
+
+::::::columns
+:::{.column width=40%}
+* Workshop, Thursday
+* Town Hall, Thursday
+:::
+
+:::{.column width=60%}
+![[events.geojupyter.org/conferences/2025-agu/](https://events.geojupyter.org/conferences/2025-agu/)](assets/images/qr-other-gj-events.svg){width=500px}
+:::
+::::::
 
 
 ## TODO: Office hours
