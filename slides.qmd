@@ -637,8 +637,6 @@ Here we see JupyterGIS running 4 different instances, one of which is in a Noteb
 
 :::notes
 _Read the slide_
-
-Let's take a look at some of the things we can do with JupyterGIS.
 :::
 
 :::incremental
@@ -652,6 +650,10 @@ Let's take a look at some of the things we can do with JupyterGIS.
 . . .
 
 :house: All under one familiar roof (JupyterLab)!
+
+:::notes
+Let's take a look at some of the things we can do with JupyterGIS.
+:::
 
 
 ## Explore data
