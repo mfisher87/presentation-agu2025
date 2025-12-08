@@ -646,12 +646,22 @@ This is why we are building a community, not just software.
 
 ![](/assets/images/logo-quantstack.png){width=50%}
 
-
 :::notes
 Let's talk about some of our work in progress now!
 
-JupyterGIS is the _GeoJupyter_ flagship project, with development led by the amazing folks at QuantStack, some of whom are here.
-And you should meet them!
+JupyterGIS is the _GeoJupyter_ flagship project, with development led by the amazing folks at QuantStack in Paris.
+:::
+
+
+---
+
+![A screenshot of JupyterGIS](/assets/images/jupytergis.jpg)
+
+:::notes
+JupyterGIS is a JupyterLab extension.
+
+Remember, Jupyter is more than Notebooks.
+Here we see JupyterGIS running 4 different instances, one of which is in a Notebook.
 :::
 
 
@@ -664,7 +674,7 @@ _Read the slide_
 :::incremental
 * Interactive GIS environment
 * JupyterLab- and browser-native (try it in a JupyterHub!)
-* Python API
+* Python API for Notebook integration
 * Supports QGIS project files
 * **_Real-time collaboration_**: like Google Docs, but on a map!
 :::
@@ -674,12 +684,59 @@ _Read the slide_
 :house: All under one familiar roof (JupyterLab)!
 
 
----
+## Explore data
 
-![A screenshot of JupyterGIS](/assets/images/jupytergis.png)
+![Inspecting attributes of a building footprint ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-1-1536x922.png)
+
+## Process data
+
+![Calculating convex hulls of regions of France ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-3-1536x922.png)
 
 
-## Demo wuz here
+## Discover data with STAC (WIP)
+
+![Browsing a STAC catalog in JupyterGIS ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-5.png)
+
+:::notes
+Spatio Temporal Asset Catalogs, or "STAC catalogs" are a modern standard for
+computer interface with data catalogs.
+
+We have basic STAC catalog support, enabling you to browse, search, and filter
+data in a STAC catalog to find data that interests you.
+
+This is a work in progress that will continue to evolve over time!
+:::
+
+
+## Support for Xarray datasets
+
+![Visualizing an Xarray dataset, tiled on-the-fly ([TiTiler](https://developmentseed.org/titiler/), [David Brochart](https://david-brochart.medium.com/create-your-own-layers-in-jupytergis-cbb995a89b16))](/assets/images/jupytergis-tiler.gif)
+
+:::notes
+Thanks to the modular Jupyter architecture, we can build extensions on
+extensions to compose cool new features.
+
+Here's a demonstration of using `jupytergis-tiler` by David Brochart of
+Quantstack, to display data in an Xarray dataset on-the-fly in JupyterGIS.
+
+Under the hood, the TiTiler dynamic tile server by Development Seed is powering
+this functionality.
+:::
+
+
+## Collaborate
+
+![Two users collaborating in real-time on a JupyterGIS project ([QuantStack](https://www.youtube.com/watch?v=FzHYYCvWyu0))](/assets/images/jupytergis-collab.gif){width=100%}
+
+:::notes
+Thanks again to the modular Jupyter architecture, we can leverage the same
+extension, `jupyter-collaboration`, that enables real-time collaboration on
+Notebooks, to enable real-time collaboration on a map.
+
+Users can leave Google Docs style comments, follow each other, and edit the map
+at the same time, enabling new GIS workflows previously unavailable with free
+and open source software.
+:::
 
 
 # :brain: Jupyter is more than Notebooks
