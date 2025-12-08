@@ -649,11 +649,11 @@ _Read the slide_
 
 . . .
 
-:house: All under one familiar roof (JupyterLab)!
-
 :::notes
 Let's take a look at some of the things we can do with JupyterGIS.
 :::
+
+:house: All under one familiar roof (JupyterLab)!
 
 
 ## Explore data
