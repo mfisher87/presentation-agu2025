@@ -858,4 +858,3 @@ Thanks for your time and attention! And I hope to see you around :smile:
 * :stopwatch: Timeline?
   * :sparkles: [JupyterGIS available to install right now](https://jupytergis.readthedocs.io/en/latest/user_guide/install.html)!
   * :shrug: It depends! We're listening to users to identify priorities.
-  * STAC browser expected this year.
