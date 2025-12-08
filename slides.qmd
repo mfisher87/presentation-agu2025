@@ -768,8 +768,8 @@ It would be amazing to see you at one of our bi-weekly hackathons or monthly com
 You can view our community calendar on `geojupyter.org` or by following the link on this slide.
 
 JupyterGIS is available for install with `pip`, `conda`, or equivalents.
-If you follow the link on this slide or visit the documentation, you can find a link to try JupyterGIS with JupyterLite.
-JupyterLite is a fully-browser-native version of JupyterGIS, meaning there's no server and nothing needs to be installed!
+If you follow the link on this slide or visit the documentation, you can find a
+link to try JupyterGIS in your browser without installing anything!
 We're jazzed to hear what you think :smile:
 
 <!-- alex ignore of-course special -->
