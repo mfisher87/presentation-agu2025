@@ -276,6 +276,8 @@ Pangeo, and OSGeo.
 
 _TODO: Speaker notes_
 
+_TODO: Consider removing this slide and the next one_
+
 :::notes
 :::
 
