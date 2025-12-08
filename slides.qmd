@@ -98,7 +98,7 @@ I also love dogs, gardening, and playing music on drums and keyboards :grin:
 ## :mega: In this talk...
 
 :::::::::columns
-::::::{.column width=75%}
+::::::{.column width=60%}
 * What is Jupyter?
 <br />
 <br />
@@ -108,13 +108,13 @@ I also love dogs, gardening, and playing music on drums and keyboards :grin:
 * Why is GeoJupyter?
 <br />
 <br />
-* What is JupyterGIS? :sparkles: Demo! :sparkles:
+* What is JupyterGIS?
 <br />
 <br />
-* You can join the GeoJupyter Community!
+* Join the GeoJupyter Community!
 ::::::
 
-::::::{.column width=25%}
+::::::{.column width=40%}
 :::{style="font-size: 90%"}
 ![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
 :::
@@ -778,7 +778,7 @@ Click the link on this slide to watch!
 ## TODO: Office hours
 
 
-# :heart: Thank **you** for listening! :heart:
+## :heart: Thank **you** for listening! :heart:
 
 ![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
 
