@@ -1,4 +1,8 @@
 /* css styles */
+#title-slide .title {
+  font-size: 1.8em;
+}
+
 .caption {
   margin: auto;
   text-align: center;
