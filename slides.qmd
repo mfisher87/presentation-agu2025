@@ -195,7 +195,7 @@ Here we see JupyterGIS running 4 different instances, one of which is in a Noteb
 :::
 
 
-## Explore data
+## :mag: Explore data
 
 ![Inspecting attributes of a building footprint ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](/assets/images/jupytergis-identify.jpg)
 
@@ -204,7 +204,7 @@ We can explore datasets interactively -- here we are inspecting attributes of a 
 :::
 
 
-## Process data
+## :abacus: Process data
 
 ![Calculating convex hulls of regions of France ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](/assets/images/jupytergis-processing.jpg)
 
@@ -213,7 +213,7 @@ We can perform data processing operations in a visual environment -- here we've 
 :::
 
 
-## Browse curated layers
+## :shopping_cart: Browse curated layers
 
 ![The JupyterGIS layer browser](/assets/images/jupytergis-layer-browser.jpg)
 
@@ -222,7 +222,7 @@ We can add layers to our map from a curated layer browser.
 :::
 
 
-## Discover data with STAC (WIP)
+## :crystal_ball: Discover data with STAC (WIP)
 
 ![Browsing a STAC catalog in JupyterGIS ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-5.png)
 
@@ -234,7 +234,7 @@ This is a work in progress that will continue to evolve over time!
 :::
 
 
-## Support for Xarray datasets
+## :1234: Support for Xarray datasets
 
 ![Visualizing an Xarray dataset, tiled on-the-fly ([TiTiler](https://developmentseed.org/titiler/), [David Brochart](https://david-brochart.medium.com/create-your-own-layers-in-jupytergis-cbb995a89b16))](/assets/images/jupytergis-tiler.gif)
 
@@ -250,7 +250,7 @@ this functionality.
 :::
 
 
-## Collaborate
+## :handshake: Collaborate
 
 ![Two users collaborating in real-time on a JupyterGIS project ([QuantStack](https://www.youtube.com/watch?v=FzHYYCvWyu0))](/assets/images/jupytergis-collab.gif){width=100%}
 
@@ -289,7 +289,7 @@ interactive computing!
 :::
 
 
-## How you can join
+## :door: How you can join
 
 {{< include how-you-can-join.md >}}
 
@@ -322,7 +322,7 @@ interested in sponsoring this work, please reach out.
 If you have any questions, you can always reach out to me on Zulip, GitHub, or email.
 :::
 
-## Other GeoJupyter happenings at AGU {.smaller}
+## :mega: Other GeoJupyter happenings at AGU {.smaller}
 
 ::::::columns
 :::{.column width=70%}
