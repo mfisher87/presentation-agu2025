@@ -145,15 +145,6 @@ Not everything we build is going to be a huge project or GIS-first.
 It depends on what our community (that's you!) tells us they need.
 :::
 
----
-
-![A photo of participants of a recent GeoJupyter Hackathon](/assets/images/hackathon-group-photo.jpg)
-
-:::notes
-This is a slice of our community who participated in a Hackathon and design
-dialog event a couple months ago.
-:::
-
 
 ## :question: What is GeoJupyter?
 
