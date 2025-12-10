@@ -352,7 +352,8 @@ We're running a full-day workshop on Thursday. If you signed up, we're excited t
 
 If you're interested but you _didn't_ sign up, don't worry, we got you!
 First, we'll be delivering this workshop in person again in other venues.
-Second and more importantly, all workshop materials are a free and open source
+
+More importantly, all workshop materials are a free and open source
 community resource you can use and contribute to.
 Please use them on your own time, reuse them in your local communities, fork
 them and remix them to meet your unique needs!
