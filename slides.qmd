@@ -755,18 +755,43 @@ interested in sponsoring this work, please reach out.
 If you have any questions, you can always reach out to me on Zulip, GitHub, or email.
 :::
 
-## Other GeoJupyter happenings at AGU
+## Other GeoJupyter happenings at AGU {.smaller}
 
 ::::::columns
-:::{.column width=40%}
-* Workshop, Thursday
-* Town Hall, Thursday
+:::{.column width=70%}
+
+* Workshop [SCIWS10](https://agu.confex.com/agu/agu25/meetingapp.cgi/Session/252640) - **Open Geospatial Workflows in the Cloud**
+  * 👐 _All_ materials open source!
+  * Thursday, December 18th; 8:30-5:00
+  * Room 333-334
+
+* Town Hall [TH45J](https://agu.confex.com/agu/agu25/meetingapp.cgi/Session/252614) - **A Discussion with GeoJupyter and Cloud-Native Geospatial Community Members**
+  * 👂 We want to hear from you!
+  * Thursday, December 18th; 6:00-7:00
+  * Room 286-287
 :::
 
-:::{.column width=60%}
+:::{.column width=30%}
 ![[events.geojupyter.org/conferences/2025-agu/](https://events.geojupyter.org/conferences/2025-agu/)](assets/images/qr-other-gj-events.svg){width=500px}
 :::
 ::::::
+
+:::notes
+We have some other events going on this week!
+Follow the QR code for all the details.
+
+We're running a full-day workshop on Thursday. If you signed up, we're excited to see you there!
+
+If you're interested but you _didn't_ sign up, don't worry, we got you!
+First, we'll be delivering this workshop in person again in other venues.
+Second and more importantly, all workshop materials are free and open source.
+Please use them on your own time, reuse them to teach your local communities,
+fork them to remix them to meet your unique needs!
+
+Thursday evening we're hosting a town hall.
+We have an all-star line up of 5 panelists that are thrilled to have an open discussion with you.
+Please join us, no registration required.
+:::
 
 
 ## TODO: Office hours
