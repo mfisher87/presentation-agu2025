@@ -139,7 +139,7 @@ So, what is _Geo_ Jupyter?
 :::
 
 
-## :people_holding_hands: It's a communtity!
+## :people_holding_hands: It's a community!
 
 ![GeoJupyter is **not** software; it's a **community** which will build many things together!](/assets/images/venn-diagram.svg)
 
