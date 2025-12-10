@@ -105,7 +105,7 @@ cross-collaboration with other communities.
 :::
 
 
-## JupyterGIS: What's the big idea?
+## :globe_with_meridians: JupyterGIS: What's the big idea?
 
 :::evenly-spaced
 :artist: **Human-centered**, participatory design
@@ -144,7 +144,7 @@ and geospatial data practitioners to empathize and collaborate with each other.
 :::
 
 
-# JupyterGIS {.nostretch}
+# :globe_with_meridians: JupyterGIS {.nostretch}
 
 :bangbang: Early development :bangbang:
 
@@ -172,7 +172,7 @@ Here we see JupyterGIS running 4 different instances, one of which is in a Noteb
 :::
 
 
-## What is JupyterGIS? How is it different?
+## :question: What is JupyterGIS and how is it different?
 
 :::notes
 _Read the slide_
