@@ -120,113 +120,28 @@ on Notebooks in real time like Google Docs.
 :::
 
 
-# :question: What is GeoJupyter?
-
-:::notes
-So, what is _Geo_ Jupyter?
-:::
-
-
-## :people_holding_hands: It's a community!
+## :people_holding_hands: GeoJupyter is a community!
 
 ![GeoJupyter is **not** software; it's a **community** which will build many things together!](/assets/images/venn-diagram.svg)
 
 :::notes
-First and foremost, **GeoJupyter** is a community and a team effort with many players.
+As another refresher, GeoJupyter is a community-directed effort to reimagine geospatial
+interactive computing experiences _with the power of the Jupyter architecture_.
+The project has many components including software, education, and
+cross-collaboration with other communities.
 
-**JupyterGIS** is our flagship project, led by QuantStack;
-JupyterGIS is a GIS platform in JupyterLab that can be used in similar ways to
-QGIS, the leading open source GIS software, plus some cool new stuff.
-
-We'll talk more about JupyterGIS shortly.
-
-But our work is not limited to JupyterGIS.
-Not everything we build is going to be a huge project or GIS-first.
-It depends on what our community (that's you!) tells us they need.
+**JupyterGIS** is our flagship project, led by QuantStack, and that's what I'll focus on today!
 :::
 
 
-## :question: What is GeoJupyter?
-
-<br />
-<br />
-
-🤝 An effort to **democratize geospatial data practice** 🤝
-
-:::notes
-My first take on how to summarize GeoJupyter was "an effort to democratize geospatial data practice".
-:::
-
-
-## :question: What is GeoJupyter?
-
-<br />
-<br />
-
-:::{.fade}
-<s>🤝 An effort to **democratize geospatial data practice** 🤝</s>
-:::
-
-:::notes
-But that's not right at all.
-:::
-
-. . .
-
-<center>
-![](/assets/images/logo-qgis.svg){height="100px" style="padding-right: 40px"}
-![](/assets/images/logo-grass.svg){height="100px"}
-![](/assets/images/logo-pangeo.svg){height="100px"}
-![](/assets/images/logo-osgeo.svg){height="100px"}
-</center>
-
-:::notes
-We're joining an ongoing effort to democratize geospatial data practice, and
-bringing the unique strengths of Jupyter to this problem space.
-
-People have been succeeding for decades at advancing the democratization of
-geospatial data practice with projects and communities like QGIS, GRASS GIS,
-Pangeo, and OSGeo.
-:::
-
-
-## :question: What is GeoJupyter?
-
-:::elevator-pitch
-<hr />
-
-GeoJupyter is an open and community-owned effort to [reimagine geospatial
-interactive computing experiences _within the Jupyter architecture_]{.jupyter-orange}
-to enable more people to confidently engage with geospatial data.
-
-<hr />
-:::
-
-:::notes
-Our mission statement describes us as an open and community-owned...
-
-_Read the slide_
-
-Maybe the first thing that jumps out is how broad this mission is, and
-that's intentional.
-We don't have all the solutions to this problem, but we know we can find them
-by working with you.
-
-What does it look like to **you** to **enable more people to confidently engage
-with geospatial data**?
-
-How can the Jupyter architecture help?
-:::
-
-
-## Our values
+## JupyterGIS: What's the big idea?
 
 :::evenly-spaced
 :artist: **Human-centered**, participatory design
 
 :open_hands: **Open source** and **open science**
 
-:cartwheeling: **Approachability** and **playfulness**, like desktop GIS tools
+:cartwheeling: **Approachability** and **playfulness**, like graphical GIS tools
 
 :feather: **Flexibility** and **reproducibility**, like coding methods
 
@@ -234,21 +149,14 @@ How can the Jupyter architecture help?
 :::
 
 :::notes
-These are the values that we feel will help us succeed at our mission:
+The idea behind JupyterGIS is to apply GeoJupyter community values, including
+participatory design (allowing users to lead the way), and enabling open
+science, to unify the good stuff from three areas of geospatial computing to
+unlock new workflows.
 
-We build and design in close partnership with users.
-
-We believe in open source and open science, so everything we do is free and
-open.
-
-And it's important to us to create tools that unify the strengths of current
-tools and workflows.
-
-Desktop GIS tools offer **approachability** and **playfulness**.
-
-Coding methods offer **flexibility** and **reproducibility**.
-
-And the Jupyter ecosystem offers **collaboration** and **storytelling**.
+We want the **approachability** and **playfulness** of graphical and desktop GIS tools;
+the **flexibility** and **reproducibility** of coding or scripting methods;
+and the **collaboration** and **storytelling** of the Jupyter ecosystem.
 :::
 
 
@@ -258,11 +166,10 @@ And the Jupyter ecosystem offers **collaboration** and **storytelling**.
 
 :::notes
 These values have historically been prioritized in separate tools and
-techniques, but we believe they belong together!
+techniques, but we believe they go together like chocolate and peanut butter!
 
-But it's not going to happen by accident :smile:
-It's only going to happen if software engineers empathize and collaborate with
-geospatial data practitioners.
+We also believe that the only way to succeed at this is for software engineers
+and geospatial data practitioners to empathize and collaborate with each other.
 :::
 
 
