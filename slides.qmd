@@ -764,15 +764,6 @@ Please join us, no registration required.
 :::
 
 
-## TODO: Office hours
-
-Options:
-
-* The Rusty Nail
-* The Den @ Howlin' Wolf (very close)
-* Lucy's Retired Surfers Bar and Restaurant (very close)
-
-
 ## :heart: Thank you
 
 {{< include logos.md >}}
