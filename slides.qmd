@@ -67,8 +67,13 @@ You'll hear more about this in an upcoming talk.
 I'm passionate about open science, documentation, and design to minimize
 cognitive load.
 
-I also love dogs, gardening, and playing music on drums and keyboards :grin:
+I also love gardening, playing music on drums and keyboards, and dogs :grin:
 :::
+
+
+---
+
+![Dog selfie](/assets/images/waffles-selfie.jpg)
 
 
 ## :brain: Jupyter is more than Notebooks {.smaller}
