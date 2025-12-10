@@ -101,7 +101,7 @@ interactive computing experiences _with the power of the Jupyter architecture_.
 The project has many components including software, education, and
 cross-collaboration with other communities.
 
-**JupyterGIS** is our flagship project, led by QuantStack, and that's what I'll focus on today!
+**JupyterGIS**, the big blue circle, is our flagship project, and that's what I'll focus on today!
 :::
 
 
@@ -153,7 +153,10 @@ and geospatial data practitioners to empathize and collaborate with each other.
 :::notes
 Let's talk about some of our work in progress now!
 
-JupyterGIS is the _GeoJupyter_ flagship project, with development led by the amazing folks at QuantStack in Paris.
+JupyterGIS, led by the awesome folks at QuantStack in Paris, is in early
+development, so we'd love for you to try it and provide us feedback!
+Remember, the project is community-led, so you can make an impact by sharing
+your impressions.
 :::
 
 
