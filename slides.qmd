@@ -46,88 +46,57 @@ def why_geojupyter(active: int | None = None) -> str:
 ```
 
 
-## :wave: Hi, I'm Matt!
+## :wave: Hi, I'm Matt! GitHub: `@mfisher87` {.smaller}
 
+:::::::::columns
+::::::{.column width=50%}
 :::evenly-spaced
 :computer: Research Software Engineer ([RSE](https://us-rse.org/))
 
 :people_holding_hands: Community Engagement Manager
 
-:open_hands: Open source maintainer:
-[jupytergis](https://github.com/geojupyter/jupytergis),
-[earthaccess](https://github.com/nsidc/earthaccess),
-several [conda-forge](https://conda-forge.org/) feedstocks,
-more
-
 :seedling: Working at [Schmidt DSE @ UC Berkeley](https://dse.berkeley.edu)
 
 :snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
 
+:open_hands: Open source maintainer & contributor:
+[jupytergis](https://github.com/geojupyter/jupytergis),
+[earthaccess](https://github.com/nsidc/earthaccess),
+[conda-forge](https://conda-forge.org/) feedstocks,
+more!
+
 :open_hands: :open_book: :brain:
 :dog: :seedling: :notes: :musical_keyboard: :drum:
 :::
+::::::
+
+::::::{.column width=50%}
+![[mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
+::::::
+:::::::::
 
 :::notes
 Hello friends!
 
+Before I get started, this talk is going to have lots of links.
+Please scan the QR code so you can follow any links you're interested in.
+
 I'm Matt Fisher, and I'm a Research Software Engineer and Community Engagement
 Manager.
-
-I'm a maintainer of several open source projects, and maybe we've interacted
-on GitHub before!
-I'll talk more about _JupyterGIS_ soon, but I also want to mention
-_earthaccess_, one of my favorite community-owned projects I help maintain.
-NASA data is behind a complicated API and authentication system, and
-_earthaccess_ navigates those systems for you and helps you access the data in
-3 lines of Python.
 
 I'm currently leading the GeoJupyter project at Schmidt Center for Data Science
 and Environment at UC Berkeley.
 
-Before that, I worked in building software for research support and data
-analysis, visualization, management, and access at the National Snow and Ice Data
-Center.
+I'm a maintainer of several open source projects, and maybe we've interacted
+on GitHub before!
+This talk is going to be about _JupyterGIS_, and I also want to mention
+_earthaccess_, which helps you access NASA data in 3 lines of Python.
+You'll hear more about this in an upcoming talk.
 
 I'm passionate about open science, documentation, and design to minimize
 cognitive load.
 
 I also love dogs, gardening, and playing music on drums and keyboards :grin:
-:::
-
-
-## :mega: In this talk...
-
-:::::::::columns
-::::::{.column width=60%}
-* What is GeoJupyter?
-<br />
-<br />
-* Why is GeoJupyter?
-<br />
-<br />
-* What is JupyterGIS?
-<br />
-<br />
-* Join the GeoJupyter Community!
-::::::
-
-::::::{.column width=40%}
-:::{style="font-size: 90%"}
-![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
-:::
-::::::
-:::::::::
-
-:::notes
-In this talk, there will be plenty of links, so scan the QR code now to access these slides and follow the links!
-
-I'm going to introduce the GeoJupyter community and discuss why it exists.
-I'll then introduce the JupyterGIS software and show it in action.
-
-Finally, we'll talk about what you can get out of joining the GeoJupyter
-community and how you can participate.
-
-_Check if anyone is scanning the QR code, and wait for them._
 :::
 
 
