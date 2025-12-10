@@ -100,35 +100,23 @@ I also love dogs, gardening, and playing music on drums and keyboards :grin:
 :::
 
 
-## :brain: Jupyter is more than Notebooks
-
-![[The Turing Way Community & Scriberia (2020)](https://zenodo.org/records/3695300)](/assets/images/jupyter-scriberia.jpg){width=1001px}
-
-:::notes
-First, to explain what we hope to contribute to the geospatial computation
-space (which already has some pretty great things going for it), let's pause
-and remember something important:
-
-_Jupyter is more than Notebooks_.
-
-It's a community that makes lots of cool stuff together.
-:::
-
-
 ## :brain: Jupyter is more than Notebooks {.smaller}
 
-* Modular and extensible architecture for interactive computing
-* Tools for thinking
+* Community!
+* Tools for thinking!
+* **JupyterLab**: Modular and extensible architecture for interactive computing
 
 ![](/assets/images/jupyterlab-workbench.jpg){.r-stretch}
 
 :::notes
-It's also a modular and extensible architecture for interactive computing with
-powerful, reusable building blocks.
+Building on the themes of the previous talk by Fernando, Jupyter is more than
+Notebooks -- in particular, Jupyter _Lab_ is a modular and extensible
+architecture for interactive computing with powerful, reusable building blocks.
+
+All of the items in the image below are what we call _extensions_.
 
 For example, the `jupyter-collaboration` extension enables users to collaborate
 on Notebooks in real time like Google Docs.
-That's a bit of foreshadowing.
 :::
 
 
