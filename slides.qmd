@@ -269,7 +269,8 @@ and open source software.
 
 :::notes
 <!-- alex ignore just -->
-You just saw some new ideas about how Jupyter's architecture can be applied to the geospatial domain.
+You just saw some new ideas about how Jupyter's architecture can be applied to
+the geospatial domain.
 
 We want you to think about this -- where can the power of Jupyter's modular and
 reusable architecture enable new and innovative geospatial workflows?
