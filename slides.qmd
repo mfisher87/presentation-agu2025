@@ -160,18 +160,6 @@ your impressions.
 :::
 
 
----
-
-![A screenshot of JupyterGIS](/assets/images/jupytergis.jpg)
-
-:::notes
-JupyterGIS is a JupyterLab extension.
-
-Remember, Jupyter is more than Notebooks.
-Here we see JupyterGIS running 4 different instances, one of which is in a Notebook.
-:::
-
-
 ## :question: What is JupyterGIS and how is it different?
 
 :::notes
@@ -193,6 +181,18 @@ Let's take a look at some of the things we can do with JupyterGIS.
 :::
 
 :house: All under one familiar roof (JupyterLab)!
+
+
+---
+
+![A screenshot of JupyterGIS](/assets/images/jupytergis.jpg)
+
+:::notes
+JupyterGIS is a JupyterLab extension.
+
+Remember, Jupyter is more than Notebooks!
+Here we see JupyterGIS running 4 different instances, one of which is in a Notebook.
+:::
 
 
 ## Explore data
