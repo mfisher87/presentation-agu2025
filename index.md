@@ -13,3 +13,5 @@ Thanks for listening to our talk :grin:
 ## :handshake: How you can join our community
 
 {{< include how-you-can-join.md >}}
+
+{{< include contact-me.md >}}

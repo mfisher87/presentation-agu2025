@@ -327,8 +327,6 @@ can be applied to make geospatial data workflows more accessible and enjoyable.
 We're excited to expand our **funded** development team, so if your company is
 interested in sponsoring this work with funds or engineering time, please reach
 out.
-
-If you have any questions, you can always reach out to me on Zulip, GitHub, or email.
 :::
 
 
@@ -409,8 +407,14 @@ Special thanks to QuantStack for leading the development of JupyterGIS.
 
 ![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
 
+{{< include contact-me.md >}}
+
 :::notes
 Thanks for your time and attention!
+
+Please don't hesitate to reach out to me directly with any questions!
+Out of these options, I'm most active on the Jupyter Zulip.
+
 And I hope to see you around the conference :smile:
 :::
 
