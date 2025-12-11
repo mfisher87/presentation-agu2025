@@ -289,7 +289,7 @@ reusable architecture enable new and innovative geospatial workflows?
 ![[geojupyter.org](https://geojupyter.org)](/assets/images/join-us.gif)
 
 :::notes
-We'd love for you to join our community to share your ideas!
+Please bring those awesome ideas to our community!
 
 In our community, you can find folks with similar problems to yours, ask and
 answer questions, and participate in designing the future of geospatial
@@ -302,7 +302,7 @@ interactive computing!
 {{< include how-you-can-join.md >}}
 
 :::notes
-There are lots of ways you can join our community and be a part of this mission.
+There are lots of ways you can join us.
 
 If you can only do one thing, join us on the Jupyter Zulip, which is like an
 open-source Slack.
@@ -400,9 +400,6 @@ I want to thank everyone involved in this community effort.
 
 <!-- alex ignore special -->
 Special thanks to QuantStack for leading the development of JupyterGIS.
-
-And to Fernando Pérez and the Schmidt Center for Data Science & Environment for
-supporting me to work on this -- I'm having lots of fun :grin:
 :::
 
 
