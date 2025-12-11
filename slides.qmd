@@ -224,7 +224,7 @@ We can perform data processing operations in a visual environment -- here we've 
 
 ## :shopping_cart: Browse curated layers
 
-![The JupyterGIS layer browser](/assets/images/jupytergis-layer-browser.jpg)
+![The JupyterGIS layer browser](/assets/images/jupytergis-layer-browser.gif)
 
 :::notes
 We can add layers to our map from a curated layer browser.
@@ -261,16 +261,42 @@ this functionality.
 
 ## :handshake: Collaborate
 
-![Two users collaborating in real-time on a JupyterGIS project ([QuantStack](https://www.youtube.com/watch?v=FzHYYCvWyu0))](/assets/images/jupytergis-collab.gif){width=100%}
+![Two users collaborating in real-time on a JupyterGIS project ([QuantStack](https://quantstack.net/slides))](/assets/images/jupytergis-collab-cursors.gif){width=100%}
 
 :::notes
 Thanks again to the modular Jupyter architecture, we can leverage
 the `jupyter-collaboration` extension, which enables real-time collaboration on
 Notebooks, to enable real-time collaboration on a map.
 
-Users can leave Google Docs style comments, follow each other, and edit the map
-at the same time, enabling new GIS workflows previously unavailable with free
-and open source software.
+Here you can see two users' cursors (emphasized for visibility) on the same map.
+:::
+
+
+## :handshake: Collaborate: Follow a user
+
+![One user following another in real-time on a JupyterGIS project ([QuantStack](https://quantstack.net/slides))](/assets/images/jupytergis-collab-follow.gif){width=100%}
+
+:::notes
+In this graphic, one user is following another user's viewport activity in real time.
+:::
+
+
+## :handshake: Collaborate: Edit together
+
+![Two users editing a shared map ([QuantStack](https://quantstack.net/slides))](/assets/images/jupytergis-collab-edit.gif){width=100%}
+
+:::notes
+Here you can see collaborators editing a shared map.
+:::
+
+
+## :handshake: Collaborate: Annotations
+
+![Two users having a conversation with spatial context through annotations ([QuantStack](https://quantstack.net/slides))](/assets/images/jupytergis-collab-annotate.gif){width=100%}
+
+:::notes
+Here you can see collaborators having a spatially aware conversation, like
+comments in Google Docs.
 :::
 
 
