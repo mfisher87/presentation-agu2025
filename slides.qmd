@@ -129,9 +129,8 @@ I'll share how to get in touch at the end.
 
 :::notes
 The idea behind JupyterGIS is to apply GeoJupyter community values, including
-participatory design (allowing users to lead the way), and enabling open
-science, to unify the good stuff from three areas of geospatial computing to
-unlock new workflows.
+participatory design (allowing users to lead the way), to unify the good stuff
+from **three areas** of geospatial computing to unlock new workflows.
 
 We want the **approachability** and **playfulness** of graphical and desktop GIS tools;
 the **flexibility** and **reproducibility** of coding or scripting methods;
