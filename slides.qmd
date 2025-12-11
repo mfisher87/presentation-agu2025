@@ -331,6 +331,7 @@ out.
 If you have any questions, you can always reach out to me on Zulip, GitHub, or email.
 :::
 
+
 ## :mega: Other GeoJupyter happenings at AGU {.smaller}
 
 ::::::columns
