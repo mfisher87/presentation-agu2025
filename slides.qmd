@@ -171,6 +171,8 @@ your impressions.
 
 :::notes
 _Read the slide_
+
+Note that JupyterLite can be used entirelye in the browser without installing anything!
 :::
 
 :::incremental
