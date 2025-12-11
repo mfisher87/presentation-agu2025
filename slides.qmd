@@ -37,7 +37,7 @@ format:
 more!
 
 :open_hands: :open_book: :brain:
-:dog: :seedling: :notes: :musical_keyboard: :drum:
+:seedling: :notes: :drum: :musical_keyboard: :dog:
 :::
 ::::::
 
@@ -67,7 +67,7 @@ You'll hear more about this in an upcoming talk.
 I'm passionate about open science, documentation, and design to minimize
 cognitive load.
 
-I also love gardening, playing music on drums and keyboards, and dogs :grin:
+I also love gardening, playing the drums and keyboards, and dogs :grin:
 :::
 
 
