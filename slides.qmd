@@ -291,8 +291,8 @@ reusable architecture enable new and innovative geospatial workflows?
 :::notes
 Please bring those awesome ideas to our community!
 
-In our community, you can find folks with similar problems to yours, ask and
-answer questions, and participate in designing the future of geospatial
+In the GeoJupyter community, you can find folks with similar problems to yours,
+ask and answer questions, and participate in designing the future of geospatial
 interactive computing!
 :::
 
@@ -325,7 +325,8 @@ special interest in how you think Jupyter's modular and reusable architecture
 can be applied to make geospatial data workflows more accessible and enjoyable.
 
 We're excited to expand our **funded** development team, so if your company is
-interested in sponsoring this work, please reach out.
+interested in sponsoring this work with funds or engineering time, please reach
+out.
 
 If you have any questions, you can always reach out to me on Zulip, GitHub, or email.
 :::
@@ -423,7 +424,8 @@ Click the link on this slide to watch!
 ![[https://mfisher87.github.io/presentation-agu2025](https://mfisher87.github.io/presentation-agu2025)](/assets/images/qr.svg){width=100%}
 
 :::notes
-Thanks for your time and attention! And I hope to see you around :smile:
+Thanks for your time and attention!
+And I hope to see you around the conference :smile:
 :::
 
 
